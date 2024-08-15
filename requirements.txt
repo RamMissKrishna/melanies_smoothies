@@ -1,4 +1,7 @@
 # requirements.txt
-  snowflake-connector-python==3.11.1
-  snowflake-snowpark-python==1.8.0
-  streamlit==1.31.1
+snowflake-connector-python==3.11.1
+snowflake-snowpark-python==1.8.0
+streamlit==1.31.1
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+st.text(fruityvice_response)
